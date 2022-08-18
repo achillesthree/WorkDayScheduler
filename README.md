@@ -21,9 +21,11 @@ When I view the time blocks for that day, then each time block should be color-c
 When I click into a time block, then I can enter an event and when I click the save button for that time block, then the text for that event is saved in local storage.
 
 When I refresh the page, then the saved events should persist.
+## Preview
+<img width="924" alt="WDS Screenshot" src="https://user-images.githubusercontent.com/105816630/185509381-ff8960d8-4259-4573-9a61-1a03142cb273.PNG">
 
 ## Preview
-https://github.com/achillesthree/QuizChallenge/blob/main/QC%20Screenshot.PNG
+[https://github.com/achillesthree/QuizChallenge/blob/main/QC%20Screenshot.PNG](https://github.com/achillesthree/WorkDayScheduler/blob/main/WDS%20Screenshot.PNG)
 
 ## Table of Contents
 - [Preview](#preview)
@@ -43,7 +45,7 @@ Basic usage for this site/project applies.
 
 ## Credits
 
-Collaborators included Shahid, Eric my instructor, Mike my TA and others in class for directional help.
+Collaborators included Shahid, Nick, Dimitra, Cannon, Eric my instructor, Mike my TA and others in class for directional help.
 
 Third-party assets were acquired through OSU and BCS.
 
@@ -53,10 +55,14 @@ README Tutorials and formatting used for this project come from: https://coding-
 
 JS Tutorials and formatting used for the project come from: https://www.w3schools.com/js/
 
+jQuery Tutorials and formatting used for the project come from: https://jqueryui.com/demos/
+  
+Other tutorials especially for JS used for the project come from: https://www.traversymedia.com/
+
 ## License
 
 Not sure what OSU Bootcamp and our class uses here but I look forward to learning more on this.
 
 ## Features
 
-My features are very much lacking here. But see the above descriptions for which features were intended. 
+My features in HTML and CSS along with most of my JS is solid. That said I had problems correcting my errors with saving to local storage and getting the colors to change per hour. That said there is dynamic code used throughout.  
