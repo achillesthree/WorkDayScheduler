@@ -21,11 +21,9 @@ When I view the time blocks for that day, then each time block should be color-c
 When I click into a time block, then I can enter an event and when I click the save button for that time block, then the text for that event is saved in local storage.
 
 When I refresh the page, then the saved events should persist.
+  
 ## Preview
 <img width="924" alt="WDS Screenshot" src="https://user-images.githubusercontent.com/105816630/185509381-ff8960d8-4259-4573-9a61-1a03142cb273.PNG">
-
-## Preview
-[https://github.com/achillesthree/QuizChallenge/blob/main/QC%20Screenshot.PNG](https://github.com/achillesthree/WorkDayScheduler/blob/main/WDS%20Screenshot.PNG)
 
 ## Table of Contents
 - [Preview](#preview)
