@@ -17,7 +17,7 @@ https://github.com/achillesthree/QuizChallenge/blob/main/QC%20Screenshot.PNG
 
 ## Installation
 
-The project can be viewed using the URL https://github.com/achillesthree/QuizChallenge or by accessing my public Git Hub https://github.com/achillesthree/QuizChallenge
+The project can be viewed using the URL https://github.com/achillesthree/QuizChallenge or by accessing my public Git Hub https://achillesthree.github.io/WorkDayScheduler/
 
 ## Usage
 
