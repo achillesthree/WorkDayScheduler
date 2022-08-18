@@ -1,63 +1,186 @@
-// the current day needs to display at the top of the calendar DONE
-// used momentjs to get and format the date and put that as the textContent 
-//for an HTML element DONE
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
 
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <!-- <div class="container">
+      <div class="row time-block" id="9">
+        <div class="col-2 hour">9am</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="col-2 saveBtn">SAVE</button>
+    </div>
+    <div class="container">
+      <div class="row time-block" id="10">
+        <div class="col-2 hour">10am</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="col-2 saveBtn">SAVE</button>
+      </div>
+    <div class="container">
+      <div class="row time-block" id="11">
+        <div class="col-2 hour">11am</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="col-2 saveBtn">SAVE</button>
+      </div>
+          <div class="container">
+            <div class="row time-block" id="12">
+              <div class="col-2 hour">12pm</div>
+              <textarea class="col-8 description"></textarea>
+              <button class="col-2 saveBtn">SAVE</button>
+            </div>
+            <div class="container">
+              <div class="row time-block" id="13">
+                <div class="col-2 hour">13:00</div>
+                <textarea class="col-8 description"></textarea>
+                <button class="col-2 saveBtn">SAVE</button>
+              </div>
+              <div class="container">
+                <div class="row time-block" id="14">
+                  <div class="col-2 hour">14:00</div>
+                  <textarea class="col-8 description"></textarea>
+                  <button class="col-2 saveBtn">SAVE</button>
+                </div>
+                <div class="container">
+                  <div class="row time-block" id="15">
+                    <div class="col-2 hour">15:00</div>
+                    <textarea class="col-8 description"></textarea>
+                    <button class="col-2 saveBtn">SAVE</button>
+                  </div>
+                  <div class="container">
+                    <div class="row time-block" id="16">
+                      <div class="col-2 hour">16:00</div>
+                      <textarea class="col-8 description"></textarea>
+                      <button class="col-2 saveBtn">SAVE</button>
+                    </div>
+                    <div class="container">
+                      <div class="row time-block" id="17">
+                        <div class="col-2 hour">17:00</div>
+                        <textarea class="col-8 description"></textarea>
+                        <button class="col-2 saveBtn">SAVE</button>
+                      </div> -->
 
-document.body.style.backgroundColor = "yellow";
+                      
+                        <div class="container-fluid">
+                          <table class="table table-borderless"
+                       
+                        
+                        <table class="table table-borderless">
+                          <tbody>
+                            <tr class="border-bottom border-white">
+                              <td class="col-1 border-right border-top border-dark text-center p-5">7:00am</td>
+                              <td class="col-9 p-0"><textarea id="7a" class="text-body border-right border-dark col-12" type="text"></textarea></td>
+                              <td class="col-2 p-0"><button class="saveBtn text-right p-5 border-0" id="7ab">SAVE</button></td>
+                            </tr>
+                            <tr class="border-bottom border-white">
+                              <td class="col-1 border-right border-top border-dark text-center p-5">8:00am</td>
+                              <td class="col-9 p-0"><textarea id="8a" class="text-body border-right border-dark col-12" type="text"></textarea></td>
+                              <td class="col-2 p-0"><button class="saveBtn text-right p-5 border-0" id="8ab">SAVE</button></td>
+                            </tr>
+                            <tr class="border-bottom border-white">
+                              <td class="col-1 border-right border-top border-dark text-center p-5">9:00am</td>
+                              <td class="col-9 p-0"><textarea id="9a" class="text-body border-right border-dark col-12" type="text"></textarea></td>
+                              <td class="col-2 p-0"><button class="saveBtn text-right p-5 border-0" id="9ab">SAVE</button></td>
+                            </tr>
+                            <tr class="border-bottom border-white">
+                              <td class="col-1 border-right border-top border-dark text-center p-5">10:00am</td>
+                              <td class="col-9 p-0"><textarea id="10a" class="text-body border-right border-dark col-12" type="text"></textarea></td>
+                              <td class="col-2 p-0"><button class="saveBtn text-right p-5 border-0" id="10ab">SAVE</button></td>
+                            </tr>
+                            <tr class="border-bottom border-white">
+                              <td class="col-1 border-right border-top border-dark text-center p-5">11:00am</td>
+                              <td class="col-9 p-0"><textarea id="11a" class="text-body border-right border-dark col-12" type="text"></textarea></td>
+                              <td class="col-2 p-0"><button class="saveBtn text-right p-5 border-0" id="11ab">SAVE</button></td>
+                            </tr>
+                            <tr class="border-bottom border-white">
+                              <td class="col-1 border-right border-top border-dark text-center p-5">12:00pm</td>
+                              <td class="col-9 p-0"><textarea id="12p" class="text-body border-right border-dark col-12" type="text"></textarea></td>
+                              <td class="col-2 p-0"><button class="saveBtn text-right p-5 border-0" id="12pb">SAVE</button></td>
+                            </tr>
+                            <tr class="border-bottom border-white">
+                              <td class="col-1 border-right border-top border-dark text-center p-5">1:00pm</td>
+                              <td class="col-9 p-0"><textarea id="1p" class="text-body border-right border-dark col-12" type="text"></textarea></td>
+                              <td class="col-2 p-0"><button class="saveBtn text-right p-5 border-0" id="1pb">SAVE</button></td>
+                            </tr>
+                            <tr class="border-bottom border-white">
+                              <td class="col-1 border-right border-top border-dark text-center p-5">2:00pm</td>
+                              <td class="col-9 p-0"><textarea id="2p" class="text-body border-right border-dark col-12" type="text"></textarea></td>
+                              <td class="col-2 p-0"><button class="saveBtn text-right p-5 border-0" id="2pb">SAVE</button></td>
+                            </tr>
+                            <tr class="border-bottom border-white">
+                              <td class="col-1 border-right border-top border-dark text-center p-5">3:00pm</td>
+                              <td class="col-9 p-0"><textarea id="3p" class="text-body border-right border-dark col-12" type="text"></textarea></td>
+                              <td class="col-2 p-0"><button class="saveBtn text-right p-5 border-0" id="3pb">SAVE</button></td>
+                            </tr>
+                            <tr class="border-bottom border-white">
+                              <td class="col-1 border-right border-top border-dark text-center p-5">4:00pm</td>
+                              <td class="col-9 p-0"><textarea id="4p" class="text-body border-right border-dark col-12" type="text"></textarea></td>
+                              <td class="col-2 p-0"><button class="saveBtn text-right p-5 border-0" id="4pb">SAVE</button></td>
+                            </tr>
+                            <tr class="border-bottom border-white">
+                              <td class="col-1 border-right border-top border-dark text-center p-5">5:00pm</td>
+                              <td class="col-9 p-0"><textarea id="5p" class="text-body border-right border-dark col-12" type="text"></textarea></td>
+                              <td class="col-2 p-0"><button class="saveBtn text-right p-5 border-0" id="5pb">SAVE</button></td>
+                            </tr>
+                            <tr class="border-bottom border-white">
+                              <td class="col-1 border-right border-top border-dark text-center p-5">6:00pm</td>
+                              <td class="col-9 p-0"><textarea id="6p" class="text-body border-right border-dark col-12" type="text"></textarea></td>
+                              <td class="col-2 p-0"><button class="saveBtn text-right p-5 border-0" id="6pb">SAVE</button></td>
+                            </tr>
+                            <tr class="border-bottom border-white">
+                              <td class="col-1 border-right border-top border-dark text-center p-5">7:00pm</td>
+                              <td class="col-9 p-0"><textarea id="7p" class="text-body border-right border-dark col-12" type="text"></textarea></td>
+                              <td class="col-2 p-0"><button class="saveBtn text-right p-5 border-0" id="7pb">SAVE</button></td>
+                            </tr>
+                            <tr class="border-bottom border-white">
+                              <td class="col-1 border-right border-top border-dark text-center p-5">8:00pm</td>
+                              <td class="col-9 p-0"><textarea id="8p" class="text-body border-right border-dark col-12" type="text"></textarea></td>
+                              <td class="col-2 p-0"><button class="saveBtn text-right p-5 border-0" id="8pb">SAVE</button></td>
+                            </tr>
+                            <tr class="border-bottom border-white">
+                              <td class="col-1 border-right border-top border-dark text-center p-5">9:00pm</td>
+                              <td class="col-9 p-0"><textarea id="9p" class="text-body border-right border-dark col-12" type="text"></textarea></td>
+                              <td class="col-2 p-0"><button class="saveBtn text-right p-5 border-0" id="9pb">SAVE</button></td>
+                            </tr>
+                            <tr class="border-bottom border-white">
+                              <td class="col-1 border-right border-top border-dark text-center p-5">10:00pm</td>
+                              <td class="col-9 p-0"><textarea id="10p" class="text-body border-right border-dark col-12" type="text"></textarea></td>
+                              <td class="col-2 p-0"><button class="saveBtn text-right p-5 border-0" id="10pb">SAVE</button></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </div>
+                      </div>
+                    
+  
+<!-- Moment -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 
-var currentDay = moment().format('dddd, MMMM Do');
-
-$("#currentDay").text(currentDay)
-var currentHour = cal.getHours();
-
-amButton9.addEventListener("click", function() {
-var am9local = amButton9class.value;
-localStorage.setItem("9am Text",am9local)});
-
-    function displayTexts () {
-        
-        document.getElementById("9a").textContent = localStorage.getItem("9am Text");
-    }
-
-    displayTexts()
-
-
-// each timeblock is color coded to  indicate whether it's in the past, present, or future
-// some sort of conditional statement to evaluate if the hour is greater than, less than, 
-// // or equal to the current hour
-
-// if (ID-OF-TIMEBLOCK (9-17) == currentHour) {
-   // add the present class to that timeblcoks
-//} else if (ID-OF-TIMEBLOCK (9-17) > currentHour) {
-    // add the future class to that timeblock
-// }
-
-
-// when i click the save button for that timeblock then the text is saved in localstorage
-// I need an event listener on the save buttons that will save only that timeblock
-//to localstorage
-
-//$('.saveBtn').on('click', function() {
-    // we need to get the value of the textarea next to this specific button and 
-    //save in a variable (value)
-    //console.log(this)
-    // you can access siblings and parents of "this"
-    // look up jquery accessing sibling value
-    // also need to retrieve the parent div's id (9) (key)
-    // localStroage.setItem(key,value)
-//})
-
-// when i refresh the page, the saved events persist
-
-//e.preventDefault();
-
-// handleClick(event) {
-//     event.persist();
-//     this.setState((prevState)) => ({
-//         foo: prevState.foo + event.pageX
-//     }));
-
-
-// I need some sort of function to run when the page loads, 
-// it will pull all data from localStorage and put it in the corresponding textarea
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
